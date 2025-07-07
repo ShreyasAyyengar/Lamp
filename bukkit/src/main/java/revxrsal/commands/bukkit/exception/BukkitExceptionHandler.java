@@ -26,7 +26,7 @@ public class BukkitExceptionHandler extends DefaultExceptionHandler<BukkitComman
 
     @HandleException
     public void onSenderNotConsole(SenderNotConsoleException e, BukkitCommandActor actor) {
-        actor.error(legacyColorize("&cYou must be the console to execute this command!"));
+        actor.error(legacyColorize("&cThis command can only be executed through the console!"));
     }
 
     @HandleException

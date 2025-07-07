@@ -32,7 +32,7 @@ public class MinestomExceptionHandler extends DefaultExceptionHandler<MinestomCo
 
     @HandleException
     public void onSenderNotConsole(SenderNotConsoleException e, MinestomCommandActor actor) {
-        actor.error(legacyColorize("&cYou must be the console to execute this command!"));
+        actor.error(legacyColorize("&cThis command can only be executed through the console!"));
     }
 
     @Override public void onEnumNotFound(@NotNull EnumNotFoundException e, @NotNull MinestomCommandActor actor) {

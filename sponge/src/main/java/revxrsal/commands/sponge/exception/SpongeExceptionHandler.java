@@ -21,7 +21,7 @@ public class SpongeExceptionHandler extends DefaultExceptionHandler<SpongeComman
 
     @HandleException
     public void onSenderNotConsole(SenderNotConsoleException e, SpongeCommandActor actor) {
-        actor.error(legacyColorize("&cYou must be the console to execute this command!"));
+        actor.error(legacyColorize("&cThis command can only be executed through the console!"));
     }
 
     @HandleException
